@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+
+      <style type="text/css">
+         /** css reset **/
+         body {
+            margin: 0;
+         }
+
+         table {
+            border-spacing: 0;
+         }
+
+         td {
+            padding: 0;
+         }
+
+         img {
+            border: 0;
+         }
+         /** css reset **/
+
+         .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #f2f2f2;
+            padding: 50px 0;
+         }
+
+         .main {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 600px;
+            background-color: #fff;
+            color: #1d252c;
+         }
+
+         a,
+         a:visited,
+         a:link {
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+         }
+
+         .two-col {
+            font-size: 0;
+            text-align: left;
+         }
+
+         /* .two-col .col {
+            font-size: 14px;
+            width: 100%;
+            max-width: 270px;
+            display: inline-block;
+            vertical-align: top;
+         } */
+         /* .two-col .col-right {
+            font-size: 14px;
+            width: 100%;
+            max-width: 270px;
+            display: inline-block;
+            vertical-align: top;
+         } */
+
+         .header {
+            font-size: 30px;
+         }
+
+         .details {
+            padding: 0 30px;
+         }
+
+         .padding {
+            text-align: left;
+         }
+         .padding .content {
+            font-size: 14px;
+         }
+
+         .padding .content span {
+            font-weight: bold;
+         }
+
+         .same-line {
+            vertical-align: top;
+            display: inline-block;
+            max-width: 270px;
+            padding: 10px 15px;
+
+            /* width: 100%; */
+         }
+
+         .receipt-details {
+            max-width: 338px;
+            font-size: 13px;
+            font-family: monospace;
+         }
+         .receipt-details p {
+            margin: 0;
+         }
+
+         .three-item {
+            text-align: left;
+            margin: 0;
+         }
+
+         .three-item .item-1 {
+            /* margin: 0 30px 0 10px; */
+            padding: 0 30px 0 10px;
+         }
+         .three-item .item-2 {
+            /* margin: 0 100px 0 0; */
+            padding: 0 100px 0 0;
+         }
+         .three-item .item-3 {
+            /* margin: 0 0 0 25px; */
+            padding: 0 22px 0 25px;
+         }
+
+         .two-item {
+            margin: 0;
+            text-align: left;
+         }
+         .two-item .item-1 {
+            /* margin: 0 80px 0 60px; */
+            padding: 0 80px 0 60px;
+         }
+         .two-item .item-2 {
+            padding: 0 22px 0 20px;
+         }
+
+         .btn-yellow {
+            padding: 10px 20px;
+            background-color: #fff200;
+            border: 1px solid #fbe27e;
+            font-size: 14px;
+            font-weight: bold;
+         }
+
+         @media only screen and (max-width: 600px) {
+            .main {
+               width: 100%;
+            }
+            .wrapper {
+               padding: 0;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <center class="wrapper">
+         <table class="main" style="width: 100%">
+            <tr>
+               <td>
+                  <table style="width: 100%; background-color: #0046bf">
+                     <tr>
+                        <td>
+                           <img src="img/bb-logo.jpg" alt="best buy logo" style="height: 60px" />
+                           <img src="img/gs-logo.jpg" alt="geek squad logo" style="height: 60px" />
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table style="width: 100%">
+                     <tr>
+                        <td style="padding: 30px">
+                           <table class="two-col">
+                              <tr>
+                                 <td style="width: 100%; text-align: center">
+                                    <table class="col-1 same-line">
+                                       <tr>
+                                          <td
+                                             style="
+                                                font-size: 20px;
+                                                width: 270px;
+                                                padding: 10px 0;
+                                                text-align: left;
+                                             "
+                                          >
+                                             <h2 style="margin: 0; color: #0046bf; width: 100%">
+                                                Jerry, thank you for shopping at Best Buy®.
+                                             </h2>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <table class="same-line">
+                                       <tr>
+                                          <td
+                                             style="
+                                                font-size: 16px;
+                                                width: 270px;
+                                                text-align: center;
+                                                padding: 20px 5px 10px;
+                                             "
+                                          >
+                                             <p style="margin-top: 0" 0>
+                                                <span style="font-weight: bold">Member ID:</span>
+                                                4791446900
+                                             </p>
+                                             <a href="#" class="btn-yellow">View My Purchases</a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <table class="col-1 same-line">
+                                       <tr>
+                                          <td
+                                             style="
+                                                font-size: 14px;
+
+                                                padding: 10px 0;
+                                                text-align: left;
+                                             "
+                                          >
+                                             <p style="margin: 10px 0 0">
+                                                Below are the details of your recent purchase.
+                                                Please keep this email for your records.
+                                             </p>
+                                             <p style="margin: 20px 0 0">
+                                                Thank you for your business and have a great day!
+                                             </p>
+                                             <p style="margin: 20px 0 0">Sincerely,</p>
+                                             <p>Your Customer Care Team</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <table class="same-line" style="width: 100%">
+                                       <tr>
+                                          <td>&nbsp;</td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table style="width: 100%; background-color: #0046bf; padding: 0 15px">
+                     <tr>
+                        <td style="display: inline-block; height: 35px">
+                           <img src="img/icon.jpg " alt="icon" width="35px" />
+                        </td>
+                        <td
+                           style="
+                              display: inline-block;
+                              padding: 0 10px;
+                              color: #fff;
+                              font-weight: bold;
+                              font-size: 18px;
+                           "
+                        >
+                           <p>
+                              Your Best Buy
+                              <span style="color: #1d252c; background-color: #fde293">Receipt</span>
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table
+                     style="
+                        width: 100%;
+                        background-color: #dcdcdc;
+                        color: #0046bf;
+                        padding: 8px 15px;
+                     "
+                  >
+                     <tr>
+                        <td style="font-weight: bold; font-size: 14px">
+                           <p style="margin: 0">Keep for your records</p>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table style="width: 100%; text-align: center">
+                     <tr>
+                        <td style="padding: 15px 0">
+                           <img src="img/barcode.png" alt="barcode" width="260px" />
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td>
+                           <table style="width: 100%; font-size: 0">
+                              <tr>
+                                 <td class="receipt-details" style="padding: 0 50px 20px">
+                                    <p style="margin: 0 0 10px; font-weight: bold">
+                                       ******* Duplicate
+                                       <span style="background-color: #fbe27e">Receipt</span>
+                                       *******
+                                    </p>
+                                    <div
+                                       style="
+                                          margin: 0;
+                                          border: 1px solid black;
+                                          max-width: 338px;
+                                          display: inline-block;
+                                       "
+                                    >
+                                       <p style="margin: 0">
+                                          *********** START
+                                          <span style="background-color: #fbe27e">RECEIPT</span>
+                                          ***********
+                                       </p>
+                                       <p style="padding: 5px 70px 50px">
+                                          Welcome to Best Buy #182 5555 Pacific Ave, California, HI
+                                          95207
+                                       </p>
+                                       <p>Val:100000-406126-471374-170441-844839-13804</p>
+                                       <p style="padding: 10px 0 20px">
+                                          0182 002 5474 03/05/21 16:51
+                                       </p>
+                                       <p class="three-item">
+                                          <span class="item-1">5871323</span
+                                          ><span class="item-2">3001818</span
+                                          ><span class="item-3">69.69</span>
+                                       </p>
+                                       <p style="margin: 0">DUALSHOCK 4 WIRELESS CONTROLL</p>
+                                       <p class="two-item">
+                                          <span class="item-1">Sales Tax</span>
+                                          <span class="item-2">5.37</span>
+                                       </p>
+                                       <p class="three-item">
+                                          <span class="item-1" style="padding: 0 22px 0 10px"
+                                             >6394775</span
+                                          >
+                                          <span class="item-2">3004784</span>
+                                          <span class="item-3" style="padding: 0 0 0 16px"
+                                             >19.99</span
+                                          >
+                                       </p>
+                                       <p>PS4-DUALSHOCK 4 BACK BUTTON A</p>
+                                       <p>29.99 Was Price</p>
+                                       <p>10.00- Sale Discount</p>
+                                       <p class="two-item">
+                                          <span class="item-1">Sales Tax</span
+                                          ><span style="padding: 0 0 0 28px">1.65</span>
+                                       </p>
+                                       <p class="three-item">
+                                          <span style="padding: 0 20px 0 10px">7007829</span>
+                                          <span class="item-2">11262</span>
+                                          <span style="padding: 0 0 0 40px">2.69</span>
+                                       </p>
+                                       <p>SOUR PATCH WATERMELON - 5 OZ.</p>
+                                       <p class="two-item">
+                                          <span class="item-1">Sales Tax</span>
+                                          <span class="item-2">0.22</span>
+                                       </p>
+                                       <p class="three-item">
+                                          <span style="padding: 0 20px 0 10px">7007829</span>
+                                          <span class="item-2">11262</span>
+                                          <span style="padding: 0 0 0 40px">2.69</span>
+                                       </p>
+                                       <p>SOUR PATCH WATERMELON - 5 OZ.</p>
+                                       <p class="two-item">
+                                          <span class="item-1">Sales Tax</span>
+                                          <span class="item-2">0.22</span>
+                                       </p>
+                                       <p style="text-align: right; padding: 0 20px 0 0">
+                                          ----------
+                                       </p>
+                                       <p style="text-align: right">
+                                          <span style="padding: 0 28px 0 0">Subtotal</span>
+                                          <span style="padding: 0 22px 0 0">90.36</span>
+                                       </p>
+                                       <p style="text-align: right">
+                                          <span style="padding: 0 35px 0 0">Sales Tax</span>
+                                          <span style="padding: 0 22px 0 0">7.46</span>
+                                       </p>
+                                       <p style="text-align: right; padding: 0 20px 0 0">
+                                          ==========
+                                       </p>
+                                       <p style="text-align: right">
+                                          <span style="padding: 0 28px 0 0">Total</span>
+                                          <span style="padding: 0 22px 0 0">97.82</span>
+                                       </p>
+                                       <p style="text-align: left; padding: 15px 0 0">
+                                          <span style="padding: 0 0 0 10px">**********2852</span>
+                                          <span style="padding: 0 0 0 10px">ChipRead USD$</span>
+                                          <span style="padding: 0 0 0 30px">97.82</span>
+                                       </p>
+                                       <p>US DEBIT - DEBIT</p>
+                                       <p style="text-align: left; padding: 0 0 0 68px">
+                                          JOHNSON/JERRY/T
+                                       </p>
+                                       <p>Approval 001392</p>
+                                       <p>Verified By PIN</p>
+                                       <p style="padding: 20px 0 0">CARD ENTRY: Chip</p>
+                                       <p>MODE: Issuer</p>
+                                       <p>AID: A0000000980840</p>
+                                       <p>Reference Number: 2216513259325</p>
+                                       <p style="text-align: right; padding: 20px 22px 0">
+                                          <span style="padding: 0 20px">Other Savings:</span> 10.00
+                                       </p>
+                                       <p style="text-align: right; padding: 0 22px 20px">
+                                          <span style="padding: 0 20px 0">Total Savings:</span>
+                                          10.00
+                                       </p>
+                                       <p>My Best Buy</p>
+                                       <p style="padding: 0 0 20px">Member ID 4791446900</p>
+                                       <p>JERRY,</p>
+                                       <p style="padding: 0 5px">
+                                          Thanks for shopping at Best Buy today! Your My Best Buy
+                                          balance as of 03/04/2021
+                                          <span style="display: block">Posted points: 87</span> Go
+                                          to BestBuy.com for more info
+                                       </p>
+                                       <p style="padding: 20px 5px 0">
+                                          Return/Exchange Policy: 15 days on most purchases. 14 days
+                                          on devices that can be activated and cell phones. For
+                                          details, go to BestBuy.com/Returns.
+                                       </p>
+                                       <p style="padding: 20px 40px">
+                                          To learn about privacy practices go to
+                                          BestBuy.com/Privacy.
+                                       </p>
+                                       <p style="padding: 20px 40px">
+                                          Your Customer Service PIN is:
+                                          <span style="display: block">0182 002 5474 030521</span>
+                                       </p>
+                                       <p style="padding: 20px 0 0">
+                                          ************ END
+                                          <span style="background-color: #fbe27e">RECEIPT</span>
+                                          ************
+                                       </p>
+                                       <p style="padding: 0 0 30px">
+                                          =====================================
+                                       </p>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!--------------DEALS & OFFERS----------------->
+            <tr>
+               <td style="padding: 20px 0 20px 0">
+                  <table style="width: 100%">
+                     <tr>
+                        <td style="font-size: 0; text-align: center">
+                           <table class="same-line" style="text-align: left; max-width: 295px">
+                              <tr>
+                                 <td style="font-size: 16px">
+                                    <a href="#"
+                                       ><img src="img/offers.jpg" alt="offers" style="width: 100%"
+                                    /></a>
+                                    <p style="font-size: 10px; margin: 0">
+                                       Only for My Best Buy&#9415; members
+                                    </p>
+                                    <a href="#"
+                                       ><strong style="display: block; padding: 2px 0 10px"
+                                          >All your membership offers in one place.</strong
+                                       ></a
+                                    >
+                                    <a href="#" class="btn-yellow">See All Your Offers</a>
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <table class="same-line" style="text-align: left; max-width: 295px">
+                              <tr>
+                                 <td style="font-size: 16px">
+                                    <a href="#"
+                                       ><img src="img/deal.jpg" alt="offers" style="width: 100%"
+                                    /></a>
+
+                                    <a href="#"
+                                       ><strong style="display: block; padding: 18px 0 28px"
+                                          >A great deal, every day</strong
+                                       ></a
+                                    >
+                                    <a class="btn-yellow" href="#">Shop Now</a>
+                                 </td>
+                              </tr>
+                           </table>
+                           >
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!------------END DEALS & OFFERS----------------->
+            <tr>
+               <td
+                  style="
+                     padding: 15px 0;
+                     background-color: #0046bf;
+                     font-size: 13px;
+                     font-weight: bold;
+                     text-align: center;
+                     border-bottom: 1px solid #fff;
+                  "
+               >
+                  <table style="width: 100%">
+                     <tr>
+                        <td><a href="#" style="color: #fff">Deal of the Day</a></td>
+                        <td><a href="#" style="color: #fff">Geek squad</a></td>
+                        <td><a href="#" style="color: #fff">Credit Cards</a></td>
+                        <td><a href="#" style="color: #fff">Customer Service</a></td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td
+                  style="
+                     padding: 3px 0;
+                     background-color: #0046bf;
+                     font-size: 13px;
+                     font-weight: bold;
+                     text-align: center;
+                     border-bottom: 1px solid #fff;
+                  "
+               >
+                  <table style="width: 100%; color: #fff">
+                     <tr>
+                        <td style="display: inline-block"><p>Follow us and share your story</p></td>
+                        <td style="display: inline-block; width: 45px">&nbsp;</td>
+                        <td style="display: inline-block">
+                           <img
+                              src="img/facebook.gif"
+                              alt="facebook"
+                              style="width: 24px; padding: 0 5px"
+                           />
+                           <img
+                              src="img/twitter.gif"
+                              alt="twitter"
+                              style="width: 24px; padding: 0 5px"
+                           />
+                           <img
+                              src="img/instagram.gif"
+                              alt="instagram"
+                              style="width: 24px; padding: 0 5px"
+                           />
+                           <img
+                              src="img/p-logo.gif"
+                              alt="p logo"
+                              style="width: 24px; padding: 0 5px"
+                           />
+                           <img src="img/in.gif" alt="in" style="width: 24px; padding: 0 5px" />
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td style="padding: 5px; background-color: #f2f2f2">
+                  <table style="width: 100%">
+                     <tr>
+                        <td style="font-size: 10px">
+                           <p style="margin: 0; padding: 0 0 10px">
+                              Your privacy is important to Best Buy. For more information on how
+                              Best Buy protects your privacy, steps you can take to protect your
+                              personal information and alerts on privacy risks facing consumers,
+                              please visit the Best Buy Privacy Hub.
+                           </p>
+                           <strong>EXPERT SERVICE. UNBEATABLE PRICE:</strong>
+                           <p style="margin: 0">
+                              *See Price Match Details in store or online at BestBuy.com/PMG.
+                           </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-size: 10px">
+                           <p>Best Buy 7601 Penn Avenue South, Richfield, MN 55423-3645</p>
+                           <p>© 2021 Best Buy. All rights reserved.</p>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+      </center>
+   </body>
+</html>
